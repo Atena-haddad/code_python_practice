@@ -1,1 +1,8 @@
 
+def create_phone_number(n):
+    digits = [str(x) for x in n]
+    my_list="".join(digits)
+    prefix = my_list[0:3]
+    num = my_list[3:6]
+    rest = my_list[6:]
+    return(f"({prefix}) {num}-{rest}")
